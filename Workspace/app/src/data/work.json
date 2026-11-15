@@ -1,0 +1,113 @@
+[
+  {
+    "id": "work-001",
+    "title": "Spread Some Joy",
+    "year": 2026,
+    "published": "2026-XX-XX",
+    "collection": "Printing Joy",
+    "status": "latest",
+    "type": "Interactive Art Installation",
+    "role": "Artist and Designer",
+    "summary": "A Mini Print Vending Machine Trail",
+    "intro": "Vending machines hold a special place in most peoples hearts: the nostalgia of childhood, winning toys or stickers, but often, as children, unable to afford to partake.The mini print vending machine trail is made for both adults and kids,  offering the same exciting gamble of vending machines, but receiving a small piece of handmade art to take home with them.  ",
+    "parapgraph": "Vending machines hold a special place in most peoples hearts: the nostalgia of childhood, winning toys or stickers, but often, as children, unable to afford to partake. The mini print vending machine trail is made for both adults and kids,  offering the same exciting gamble of vending machines, but receiving a small piece of handmade art to take home with them.I have ten machines that are slowly finding their homes, and each location has its own mini collection of art, and you receive a mystery piece of original art for only a pound. I want to spread joy through affordable art, and especially with the rising tidal wave of AI, having something that is handmade feels tangible and human.Making my art entirely by hand, through screen printing, makes me feel hopeful. This project will also help raise funds for MNDA, with 30 % of purchases donated, thanks to the support of my Sponsor.I am unlikely to make a profit on this project; in fact, it likely wont even cover my labour costs, but creating Joy and Smiles right now feels more important. ",
+    "poster": "images/art-001.jpg",
+    "posteralt": "Poster artwork for Printing for Joy",
+    "techniques": [
+      "Printmaking ",
+      "Coordinating with Local Businesses ",
+      "Ingraving"
+    ]
+  },
+  {
+    "id": "work-002",
+    "title": "COME STAND IN MY SHOES - ULTRA ARTUS",
+    "year": 2025,
+    "published": "2025-05-30",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Interactive Art Installation",
+    "role": "Artist",
+    "summary": "Interactive Art Installation to see into my eyes",
+    "intro": " This work invites people to come and both experience the dizzying reality I face on a day to day while also seeing it. ",
+    "parapgraph": "A 4m long print of spoons, on a circular motor hanging from the ceiling with a hand drawn animation inside, creating an inverted zoetrope. This work invites people to come and both experience the dizzying reality I face on a day to day while also seeing it.",
+    "poster": "images/art-002.jpg",
+    "posteralt": "Poster artwork for COME STAND IN MY SHOES",
+    "techniques": [
+      "Printmaking ",
+      "3d Moddelling "
+    ]
+  },
+  {
+    "id": "work-003",
+    "title": "A PRECARIOUS GAME",
+    "year": 2025,
+    "published": "2025-06-19",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Print",
+    "role": "Artist",
+    "summary": "An A1 Screenprint depicting a tower of cards beginning to fall because of one wrong move. This is a 4-layer colour Screenprint depicting a house of cards with the spoon motif.",
+    "intro": "An A1 Screenprint depicting a tower of cards beginning to fall because of one wrong move.",
+    "parapgraph": "An A1 Screenprint depicting a tower of cards beginning to fall because of one wrong move. This is a 4-layer colour Screenprint depicting a house of cards with the spoon motif.",
+    "poster": "images/art-003.png",
+    "posteralt": "Poster artwork for A PRECARIOUS GAME",
+    "techniques": [
+      "Printmaking "
+    ]
+  },
+  {
+    "id": "work-003",
+    "title": "BRAVE FACE",
+    "year": 2025,
+    "published": "2025-05-6",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Print",
+    "role": "Artist",
+    "summary": "Brave face is an A1 Screen Print depicting a smiling mask wearing hospital patient on puppet strings and with an IV, suspended on a pedestal. ",
+    "intro": "Brave face is an A1 Screen Print depicting a smiling mask wearing hospital patient on puppet strings and with an IV, suspended on a pedestal. ",
+    "parapgraph": "Brave face is an A1 Screen Print depicting a smiling mask wearing hospital patient on puppet strings and with an IV, suspended on a pedestal. It was based on the 100s of images of me from hospital, all of which have me smiling despite pain and immense fear.Brave face is two seperate editions. The first has flood coat of purple and lining in pink, while the second has a flood coat in blue and the lining in purple. Both have a white mask. ",
+"poster": "images/art-004.jpg",
+    "posteralt": "Poster artwork for BRAVE FACE",
+    "techniques": [
+      "Printmaking "
+    ]
+  },
+   {
+    "id": "work-003",
+    "title": "THE WAITING ROOM’S PERSPECTIVE",
+    "year": 2025,
+    "published": "2025-05-7",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Print",
+    "role": "Artist",
+    "summary": "An A1 Screenprint series depicting the view of a wall of the waiting room in the doctors hopsital. ",
+    "intro": "An A1 Screenprint series depicting the view of a wall of the waiting room in the doctors hopsital. ",
+    "parapgraph": "An A1 Screenprint series depicting the view of a wall of the waiting room in the doctors hopsital. This is a three layer print. There are two editions of this A1 print. Version 1 uses purple, darker orange and bright pink to create a gliching effect. Version 2 uses drak green, orange, and bright pink and has a white clock rim.  ",
+"poster": "images/art-005.jpg",
+    "posteralt": "Poster artwork for THE GAME IS RIGGED",
+    "techniques": [
+      "Printmaking "
+    ]
+  },
+     {
+    "id": "work-003",
+    "title": "THE GAME IS RIGGED",
+    "year": 2025,
+    "published": "2025-05-25",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Print",
+    "role": "Artist",
+    "summary": "An A1 Screenprint series depicting a Snakes and Ladders version of my life. ",
+    "intro": "An A1 Screenprint series depicting a Snakes and Ladders version of my life. ",
+    "parapgraph": "An A1 Screenprint series depicting a Snakes and Ladders version of my life. This is a 4-layer colour Screenprint in which, no matter what is rolled, you end up back in hospital or on the toilet. ",
+"poster": "images/art-006.jfif",
+    "posteralt": "THE GAME IS RIGGED",
+    "techniques": [
+      "Printmaking "
+    ]
+  }
+]
