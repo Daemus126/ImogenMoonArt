@@ -57,7 +57,7 @@
     ]
   },
   {
-    "id": "work-003",
+    "id": "work-004",
     "title": "BRAVE FACE",
     "year": 2025,
     "published": "2025-05-6",
@@ -75,7 +75,7 @@
     ]
   },
    {
-    "id": "work-003",
+    "id": "work-005",
     "title": "THE WAITING ROOM’S PERSPECTIVE",
     "year": 2025,
     "published": "2025-05-7",
@@ -93,7 +93,7 @@
     ]
   },
      {
-    "id": "work-003",
+    "id": "work-006",
     "title": "THE GAME IS RIGGED",
     "year": 2025,
     "published": "2025-05-25",
@@ -106,6 +106,42 @@
     "parapgraph": "An A1 Screenprint series depicting a Snakes and Ladders version of my life. This is a 4-layer colour Screenprint in which, no matter what is rolled, you end up back in hospital or on the toilet. ",
 "poster": "images/art-006.jfif",
     "posteralt": "THE GAME IS RIGGED",
+    "techniques": [
+      "Printmaking "
+    ]
+  },
+  {
+    "id": "work-007",
+    "title": "WHEN DO I GET TO LIVE",
+    "year": 2025,
+    "published": "2025-04-28",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Print",
+    "role": "Artist",
+    "summary": "An A1 Screenprint depicting the month I was diagnosed with ulcerative colitis. This is an exact timeline of my diagnosis, and the trauma I endured. This is a three layer print. ",
+    "intro": "An A1 Screenprint depicting the month I was diagnosed with ulcerative colitis. This is an exact timeline of my diagnosis, and the trauma I endured. This is a three layer print. ",
+    "parapgraph": "An A1 Screenprint depicting the month I was diagnosed with ulcerative colitis. This is an exact timeline of my diagnosis, and the trauma I endured. This is a three layer print. ",
+"poster": "images/art-007.jpg",
+    "posteralt": "WHEN DO I GET TO LIVE",
+    "techniques": [
+      "Printmaking "
+    ]
+  },
+   {
+    "id": "work-008",
+    "title": "A FRAGILE KIND OF ALIVE",
+    "year": 2025,
+    "published": "2025-05-01",
+    "collection": "Spoons",
+    "status": "ongoing",
+    "type": "Print",
+    "role": "Artist",
+    "summary": "A small scale Screenprint isolating the lilly of the valley  bouquet  held by  my hand which has a  canula  in it. ",
+    "intro": "A small scale Screenprint isolating the lilly of the valley  bouquet  held by  my hand which has a  canula  in it.",
+    "parapgraph": "A small scale Screenprint isolating the lilly of the valley  bouquet  held by  my hand which has a  canula  in it. ",
+"poster": "images/art-008.png",
+    "posteralt": "A FRAGILE KIND OF ALIVE",
     "techniques": [
       "Printmaking "
     ]

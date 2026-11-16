@@ -53,7 +53,8 @@ function scrollNews() {
 
 
 const latestWork = works.filter((work) => work.status === "latest");
-const currentwork = works.filter((work) => work.collection === "Spoons");
+const collectionspoon = works.filter((work) => work.collection === "Spoons");
+const collectionspoonslice = collectionspoon.slice(4)
 const oldwork = works.filter((work) => work.status === "finished");
 
 function App() {
@@ -131,45 +132,54 @@ function App() {
 
         <div className='currentwork'>
           <div className='current'>
-            <h2>Spoon Theory Collection</h2>
+            <h2>Collection: Spoon Theory</h2>
           </div>
           <div className="project-Reel">
+             <div className='seemore'> 
             <ul className="artul">
-            <li className="artli">
-              {currentwork.map((work) =>
-                <ArtCards
-                  key={work}
-                  id={work.id}
-                  title={work.title}
-                  poster={work.poster}
-                  posteralt={work.posteralt}
-                  isSelected={selectedIds.includes(work.id)}
-                  onToggleSelect={handleToggleSelect}
-                />
-              )
-              }
-            </li>
+              <li className="artli">
+                {collectionspoonslice.map((work) =>
+                  <ArtCards
+                    key={work}
+                    id={work.id}
+                    title={work.title}
+                    poster={work.poster}
+                    posteralt={work.posteralt}
+                    isSelected={selectedIds.includes(work.id)}
+                    onToggleSelect={handleToggleSelect}
+                  />
+                )
+                }
+              </li>
             </ul>
+            </div>
+           
           </div>
         </div>
 
         <div className='aboutSection' id='scrollAboutMe'>
-          <h2>About</h2>
-          <p>Imogen is a 22-year-old artist, illustrator and printmaker from Leigh-on-Sea, Essex.
+          <div className='abouttext'>
+            <h2>About Me</h2>
+            <p>Imogen is a 22-year-old artist, illustrator and printmaker from Leigh-on-Sea, Essex.
 
-            She is a graduate of the University of Reading, with an honours BA in Fine Art, and begins her MA in Children’s Book Illustration at Goldsmiths this September.
+              She is a graduate of the University of Reading, with an honours BA in Fine Art, and begins her MA in Children’s Book Illustration at Goldsmiths this September.
+          </p><p>
+              Her work explores chronic fatigue and pain and the impact of living with an invisible illness, such as Ulcerative Colitis. She aims to raise awareness through her art and to advocate for herself and others by helping people understand what it’s like to live with a chronic illness.
+</p><p>
+              Since graduating from the University of Reading in 2025:
+</p><p> <ul>
+              <li>Taught in Peru with the Future Sense Foundation</li>
+             <li>Artist in Residence at the Caversham Picture Framers</li> 
+             <li> Exhibition and Artist Talk “Aftershocks and Echoes”</li> 
+             <li> Organised and is currently running the “Printing Joy” Project</li> 
+</ul>
+              To read Imogen’s 2025 Graduate Statement, click here.
+              If you do not have Instagram but would like an insight into her process and practice, click here.</p>
+          </div>
+          <div className='aboutimgdiv'>
 
-            Her work explores chronic fatigue and pain and the impact of living with an invisible illness, such as Ulcerative Colitis. She aims to raise awareness through her art and to advocate for herself and others by helping people understand what it’s like to live with a chronic illness.
-
-            Since graduating from the University of Reading in 2025:
-
-            Taught in Peru with the Future Sense Foundation
-            Artist in Residence at the Caversham Picture Framers
-            Exhibition and Artist Talk “Aftershocks and Echoes”
-            Organised and is currently running the “Printing Joy” Project
-
-            To read Imogen’s 2025 Graduate Statement, click here.
-            If you do not have Instagram but would like an insight into her process and practice, click here.</p>
+            <img src="src/assets/Profile.jpg" alt="Imogen Moon Profile" className='aboutimg' />
+          </div>
         </div>
 
         <div className='GallerySection' id='scrollGallery'>
@@ -194,7 +204,7 @@ function App() {
         </div>
 
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }
@@ -205,6 +215,7 @@ function WorkDetail({ works, selectedIds, onToggleSelect }) {
     <>
       <Link className="back-link" to="/">← Back to the archive</Link>
       <h2>{work.title}</h2>
+      <h2>test</h2>
     </>
 
   )
