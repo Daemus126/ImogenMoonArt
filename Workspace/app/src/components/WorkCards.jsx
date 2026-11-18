@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function WorkCards({  id, title,   year, collection,  role, summary, techniques, intro, poster, posteralt, isSelected, onToggleSelect }) {
+function WorkCards({  id, title, year, collection,  role, summary, techniques, intro, poster, posteralt, isSelected, onToggleSelect }) {
 
 
     return (

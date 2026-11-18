@@ -74,20 +74,6 @@ function App() {
 
   return (
     <>
-
-      <Routes>
-
-        <Route
-          path="/works/:workId"
-          element={(
-            <WorkDetail
-              works={works}
-              selectedIds={selectedIds}
-              onToggleSelect={handleToggleSelect}
-            />
-          )}
-        />
-      </Routes>
       <Header />
       <ul className='navbar'>
 
@@ -99,7 +85,51 @@ function App() {
         <li className='News'><a onClick={() => { scrollNews() }}>News</a></li>
       </ul>
 
-      <div className='body' id='scrollHome'>
+
+      <Routes>
+  <Route
+            path="/"
+            element={(
+              <Home
+                works={works}
+                selectedIds={selectedIds}
+                onToggleSelect={handleToggleSelect}
+              />
+            )}
+          />
+        <Route
+          path="/works/:workId"
+          element={(
+            <WorkDetail
+              works={works}
+              selectedIds={selectedIds}
+              onToggleSelect={handleToggleSelect}
+            />
+          )}
+        />
+      </Routes>
+    
+     
+      <Footer />
+    </>
+  )
+}
+
+
+
+function Home ({ works, selectedIds, onToggleSelect }) {
+  function handleToggleSelect(id) {
+    if (selectedIds.includes(id)) {
+      setSelectedIds(selectedIds.filter((selectedId) => selectedId !== id));
+      <Link to={`/work/${work.id}`}> View</Link>
+    } else {
+      setSelectedIds([...selectedIds, id]);
+    }
+  }
+
+
+return(
+ <div className='body' id='scrollHome'>
 
         <div className='currentwork'>
           <div className='lastest'>
@@ -204,18 +234,40 @@ function App() {
         </div>
 
       </div>
-      <Footer />
-    </>
-  )
-}
+
+
+
+  )}
 
 function WorkDetail({ works, selectedIds, onToggleSelect }) {
   const { workId } = useParams();
+
+  const work = works.find((candidate) => candidate.id === workId);
   return (
     <>
-      <Link className="back-link" to="/">← Back to the archive</Link>
+    <div className='workdiv'> 
+        <Link className="back-link" to="/">← Back to Main Page</Link>
+      <div className='workimg'>
+       {work.poster ? (
+                            <img className="film-card__poster" src={work.poster} alt={work.posteralt} />
+                        ) : (
+                            <div className="film-card__poster film-card__poster--missing">
+                               
+                            </div>
+                        )}
+                        </div>
+      <div className='worktext'>
       <h2>{work.title}</h2>
-      <h2>test</h2>
+      <h3>{work.summary}</h3>
+         {work.role} · {work.year} · {work.collection}
+      <p> {work.parapgraph}</p>
+      </div>
+
+      </div>
+
+    
+
+    
     </>
 
   )

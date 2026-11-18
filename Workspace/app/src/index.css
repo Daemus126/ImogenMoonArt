@@ -201,10 +201,10 @@ ul.artul {
 
 }
 
-.seemore :hover{
+.seemore :hover:not(:has(*:hover)){
   background-color:  var(--border);
   padding-left: 3rem;
-
+color: var(--bg)
 }
 
 .art-title {
@@ -260,6 +260,23 @@ width: 100%;
   padding: 5rem 1rem 2rem 1rem;
 
 }
+
+/* Indvidual work secto9ns*/
+.back-link{
+  padding: 2rem;
+  background-color: var(--border);
+  color: var(--bg);
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+.workdiv {
+  padding: 5rem;
+  background-color: var(--bg);
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  display: grid;
+  grid-template-columns: 1f 1f;
+}
+
+
 
 .footer {
   padding: 2rem;
