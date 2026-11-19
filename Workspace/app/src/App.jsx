@@ -87,16 +87,16 @@ function App() {
 
 
       <Routes>
-  <Route
-            path="/"
-            element={(
-              <Home
-                works={works}
-                selectedIds={selectedIds}
-                onToggleSelect={handleToggleSelect}
-              />
-            )}
-          />
+        <Route
+          path="/"
+          element={(
+            <Home
+              works={works}
+              selectedIds={selectedIds}
+              onToggleSelect={handleToggleSelect}
+            />
+          )}
+        />
         <Route
           path="/works/:workId"
           element={(
@@ -108,8 +108,8 @@ function App() {
           )}
         />
       </Routes>
-    
-     
+
+
       <Footer />
     </>
   )
@@ -117,7 +117,7 @@ function App() {
 
 
 
-function Home ({ works, selectedIds, onToggleSelect }) {
+function Home({ works, selectedIds, onToggleSelect }) {
   function handleToggleSelect(id) {
     if (selectedIds.includes(id)) {
       setSelectedIds(selectedIds.filter((selectedId) => selectedId !== id));
@@ -128,44 +128,44 @@ function Home ({ works, selectedIds, onToggleSelect }) {
   }
 
 
-return(
- <div className='body' id='scrollHome'>
+  return (
+    <div className='body' id='scrollHome'>
 
-        <div className='currentwork'>
-          <div className='lastest'>
-            <h2>The Latest</h2>
-          </div>
-
-          {latestWork.map((work) =>
-            <WorkCards
-              key={work}
-              id={work.id}
-              title={work.title}
-              status={work.status}
-              year={work.year}
-              collection={work.collection}
-              published={work.published}
-              role={work.role}
-              summary={work.summary}
-              techniques={work.techniques}
-              intro={work.intro}
-              poster={work.poster}
-              posteralt={work.posteralt}
-              isSelected={selectedIds.includes(work.id)}
-              onToggleSelect={handleToggleSelect}
-            />
-          )
-          }
-
+      <div className='currentwork'>
+        <div className='lastest'>
+          <h2>The Latest</h2>
         </div>
 
+        {latestWork.map((work) =>
+          <WorkCards
+            key={work}
+            id={work.id}
+            title={work.title}
+            status={work.status}
+            year={work.year}
+            collection={work.collection}
+            published={work.published}
+            role={work.role}
+            summary={work.summary}
+            techniques={work.techniques}
+            intro={work.intro}
+            poster={work.poster}
+            posteralt={work.posteralt}
+            isSelected={selectedIds.includes(work.id)}
+            onToggleSelect={handleToggleSelect}
+          />
+        )
+        }
 
-        <div className='currentwork'>
-          <div className='current'>
-            <h2>Collection: Spoon Theory</h2>
-          </div>
-          <div className="project-Reel">
-             <div className='seemore'> 
+      </div>
+
+
+      <div className='currentwork'>
+        <div className='current'>
+          <h2>Collection: Spoon Theory</h2>
+        </div>
+        <div className="project-Reel">
+          <div className='seemore'>
             <ul className="artul">
               <li className="artli">
                 {collectionspoonslice.map((work) =>
@@ -182,62 +182,63 @@ return(
                 }
               </li>
             </ul>
-            </div>
-           
           </div>
+
         </div>
-
-        <div className='aboutSection' id='scrollAboutMe'>
-          <div className='abouttext'>
-            <h2>About Me</h2>
-            <p>Imogen is a 22-year-old artist, illustrator and printmaker from Leigh-on-Sea, Essex.
-
-              She is a graduate of the University of Reading, with an honours BA in Fine Art, and begins her MA in Children’s Book Illustration at Goldsmiths this September.
-          </p><p>
-              Her work explores chronic fatigue and pain and the impact of living with an invisible illness, such as Ulcerative Colitis. She aims to raise awareness through her art and to advocate for herself and others by helping people understand what it’s like to live with a chronic illness.
-</p><p>
-              Since graduating from the University of Reading in 2025:
-</p><p> <ul>
-              <li>Taught in Peru with the Future Sense Foundation</li>
-             <li>Artist in Residence at the Caversham Picture Framers</li> 
-             <li> Exhibition and Artist Talk “Aftershocks and Echoes”</li> 
-             <li> Organised and is currently running the “Printing Joy” Project</li> 
-</ul>
-              To read Imogen’s 2025 Graduate Statement, click here.
-              If you do not have Instagram but would like an insight into her process and practice, click here.</p>
-          </div>
-          <div className='aboutimgdiv'>
-
-            <img src="src/assets/Profile.jpg" alt="Imogen Moon Profile" className='aboutimg' />
-          </div>
-        </div>
-
-        <div className='GallerySection' id='scrollGallery'>
-          <div className='lastest'> <h2>Gallery</h2>
-          </div>
-          <div className="project-Reel">
-            <div className="art-grid">
-              {works.map((work) =>
-                <ArtCards
-                  key={work}
-                  id={work.id}
-                  title={work.title}
-                  poster={work.poster}
-                  posteralt={work.posteralt}
-                  isSelected={selectedIds.includes(work.id)}
-                  onToggleSelect={handleToggleSelect}
-                />
-              )
-              }
-            </div>
-          </div>
-        </div>
-
       </div>
 
+      <div className='aboutSection' id='scrollAboutMe'>
+        <div className='abouttext'>
+          <h2>About Me</h2>
+          <p>Imogen is a 22-year-old artist, illustrator and printmaker from Leigh-on-Sea, Essex.
+
+            She is a graduate of the University of Reading, with an honours BA in Fine Art, and begins her MA in Children’s Book Illustration at Goldsmiths this September.
+          </p><p>
+            Her work explores chronic fatigue and pain and the impact of living with an invisible illness, such as Ulcerative Colitis. She aims to raise awareness through her art and to advocate for herself and others by helping people understand what it’s like to live with a chronic illness.
+          </p><p>
+            Since graduating from the University of Reading in 2025:
+          </p><p> <ul>
+            <li>Taught in Peru with the Future Sense Foundation</li>
+            <li>Artist in Residence at the Caversham Picture Framers</li>
+            <li> Exhibition and Artist Talk “Aftershocks and Echoes”</li>
+            <li> Organised and is currently running the “Printing Joy” Project</li>
+          </ul>
+            To read Imogen’s 2025 Graduate Statement, click here.
+            If you do not have Instagram but would like an insight into her process and practice, click here.</p>
+        </div>
+        <div className='aboutimgdiv'>
+
+          <img src="src/assets/Profile.jpg" alt="Imogen Moon Profile" className='aboutimg' />
+        </div>
+      </div>
+
+      <div className='GallerySection' id='scrollGallery'>
+        <div className='lastest'> <h2>Gallery</h2>
+        </div>
+        <div className="project-Reel">
+          <div className="art-grid">
+            {works.map((work) =>
+              <ArtCards
+                key={work}
+                id={work.id}
+                title={work.title}
+                poster={work.poster}
+                posteralt={work.posteralt}
+                isSelected={selectedIds.includes(work.id)}
+                onToggleSelect={handleToggleSelect}
+              />
+            )
+            }
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
-  )}
+
+  )
+}
 
 function WorkDetail({ works, selectedIds, onToggleSelect }) {
   const { workId } = useParams();
@@ -245,29 +246,32 @@ function WorkDetail({ works, selectedIds, onToggleSelect }) {
   const work = works.find((candidate) => candidate.id === workId);
   return (
     <>
-    <div className='workdiv'> 
+      <div className="br">
         <Link className="back-link" to="/">← Back to Main Page</Link>
-      <div className='workimg'>
-       {work.poster ? (
-                            <img className="film-card__poster" src={work.poster} alt={work.posteralt} />
-                        ) : (
-                            <div className="film-card__poster film-card__poster--missing">
-                               
-                            </div>
-                        )}
-                        </div>
-      <div className='worktext'>
-      <h2>{work.title}</h2>
-      <h3>{work.summary}</h3>
-         {work.role} · {work.year} · {work.collection}
-      <p> {work.parapgraph}</p>
-      </div>
+         </div>
+        
+        <div className='workdiv'>
+        <div className='workimg'>
+          {work.poster ? (
+            <img className="film-card__poster" src={work.poster} alt={work.posteralt} />
+          ) : (
+            <div className="film-card__poster film-card__poster--missing">
+
+            </div>
+          )}
+        </div>
+        <div className='worktext'>
+          <h2>{work.title}</h2>
+          <h3>{work.summary}</h3>
+          {work.role} · {work.year} · {work.collection}
+          <p> {work.parapgraph}</p>
+        </div>
 
       </div>
 
-    
 
-    
+
+
     </>
 
   )

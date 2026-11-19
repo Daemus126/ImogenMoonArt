@@ -37,14 +37,7 @@
 
 .headerGrid {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-
-.HeaderImageContainer {
-  display: flex;
-  flex-direction: column;
-
-
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 
@@ -58,10 +51,7 @@
 
 .headertext {
   padding-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  padding-left: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -131,14 +121,14 @@ body {
 
 .work-card {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
   background-color: var(--card-bg);
   border-radius: 0rem 0rem 0.5rem 0.5rem;
-  padding-bottom: 1rem;
+  padding: 2rem;
 }
 
 .artpic {
-  padding-right: 2rem;
+  padding: 1rem;
 }
 
 .work-card-content {
@@ -188,7 +178,7 @@ ul.artul {
 
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 
 }
@@ -220,7 +210,7 @@ color: var(--bg)
 
 .aboutSection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 3rem;
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--card-bg);
@@ -262,20 +252,45 @@ width: 100%;
 }
 
 /* Indvidual work secto9ns*/
+
+.br {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .back-link{
-  padding: 2rem;
+  margin-left: 4rem;
   background-color: var(--border);
   color: var(--bg);
     font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
 }
+
+.back-link:hover {
+   background-color: var(--bg);
+  color: var(--border);
+  padding: 1rem;
+}
+
 .workdiv {
   padding: 5rem;
   background-color: var(--bg);
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
   display: grid;
-  grid-template-columns: 1f 1f;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+.workimg{
+ 
+
+}
+
+.worktext {
+  padding: 1rem;
+}
 
 
 .footer {
@@ -285,4 +300,12 @@ width: 100%;
   color: #fff;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.rights{
+  background-color: var(--bg);
+  text-align: center;
+    padding: 0.5rem;
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  ;
 }

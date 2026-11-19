@@ -13,5 +13,8 @@ export const Footer = () => {
 </div>
 
     </div>
+    <div className='rights'> 
+    <p> DaemusRiver All rights reserved 2026 </p>
+    </div>
     </>
   )}
